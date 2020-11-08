@@ -55,19 +55,19 @@ function App() {
   }
 
   return (
-    <div>
-      <h2>Lista de Projetos</h2>
+    <div className="container">
+      <h2>Lista de Repositórios</h2>
       <ul data-testid="repository-list">             
         { 
           repositorios.map(rep => (
-            <li key={ rep.id }>{ rep.title }
+            <li key={ rep.id }><span>{ rep.title }</span>
             { btnRemover(rep.id) }
             </li>
           ))
         }
       </ul>
       <form className="form-add">
-        <input type="text" id="newProj" autoFocus autoComplete="off" placeholder="Digite o nome do projeto"/>
+        <input type="text" id="newProj" autoFocus autoComplete="off" placeholder="Nome do repositório"/>
         <button onClick={handleAddRepository} type="button">Adicionar</button>
       </form>
     </div>

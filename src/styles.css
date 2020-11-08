@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Helvetica, sans-serif
 }
 
 body {
@@ -17,11 +18,14 @@ div li {
   display: flex;
   align-items: center;
   font-size: 18px;
+  
 }
 
+/*
 div li + li {
   margin-top: 15px;
 }
+*/
 
 button {
   background: #7159c1;
@@ -35,6 +39,36 @@ button {
 }
 
 div li button {
-  margin: 0 15px;
+  margin: 4px 8px;
   background: #ca4949;
+  
+}
+
+div li span {
+  width: 350px;  
+  margin: 0 8px;
+}
+
+div li:nth-child(odd) {
+  background: #ddd;
+}
+
+div li:nth-child(even) {
+  background: #eee;
+}
+
+.container {
+  padding: 50px;
+  max-width: 500px;
+}
+
+h2 {
+  margin: 4px 8px;
+}
+
+input {
+  padding: 8px 15px;
+  width: 290px;
+  margin-right: 8px; 
+  outline: 0;
 }
