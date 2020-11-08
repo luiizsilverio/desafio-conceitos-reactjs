@@ -16,6 +16,7 @@ div {
 div li {
   display: flex;
   align-items: center;
+  font-size: 18px;
 }
 
 div li + li {
